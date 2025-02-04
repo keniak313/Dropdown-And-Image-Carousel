@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="/scripts.js" defer></script>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="/main.js" type="module"></script>
+  </head>
+  <body>
+    <form id="signupForm" class="" novalidate>
+      <div class="inputs">
+        <label for="name">
+          <input
+          type="text"
+          name="name"
+          title="name"
+          class="name"
+          placeholder="Name"
+          required
+          minlength="3"
+        />
+        </label>
+        <label for="email">
+          <input
+          type="email"
+          name="email"
+          title="email"
+          class="email"
+          placeholder="Email"
+          required
+        />
+        </label>
+        <label for="password">
+          <input
+          type="password"
+          name="password"
+          title="password"
+          class="password"
+          placeholder="Password"
+          required
+          minlength="3"
+        />
+        </label>
+        <label for="confirmPassword">
+          <input
+          type="password"
+          name="confirmPassword"
+          title="confirmPassword"
+          class="confirmPassword"
+          placeholder="Confirm password"
+          required
+          minlength="3"
+        />
+        </label>
+      </div>
+      <button form="signupForm" class="submit">SUBMIT</button>
+    </form>
+
+    <div class="dropdown">
+      <div class="mainBox">
+        <div class="mainItem">Animal</div>
+        <i class="icon"></i>
+      </div>
+      <div class="itemsBox">
+        <div class="item">Cat</div>
+        <div class="item">Dog</div>
+        <div class="item">Rat</div>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <div class="box">
+        <div class="item">
+          <div>Cos cos 2</div>
+          <div class="title">Canyon Tree</div>
+        </div>
+        <div class="item">
+          <img src="./images/canyon.jpg" alt="Canyon"/>
+          <div class="title">Canyon</div>
+        </div>
+        <div class="item">
+          <img src="./images/canyon_tree.jpg" alt="Canyon Tree"/>
+          <div class="title">Canyon Tree</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btnLeft">LEFT</button>
+        <button class="btnRight">RIGHT</button>
+      </div>
+    </div>
+  </body>
 </html>
