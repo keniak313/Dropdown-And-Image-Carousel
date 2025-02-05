@@ -34,11 +34,9 @@ class Dropdown {
   }
 }
 
-function initDropdowns() {
+(function initDropdowns() {
   const dropdowns = document.querySelectorAll(".dropdown");
   dropdowns.forEach((d) => {
     new Dropdown(d);
   });
-}
-
-initDropdowns();
+})();

@@ -211,11 +211,9 @@ class Form {
   }
 }
 
-function initForms() {
+(function initForms() {
   const forms = document.querySelectorAll("form");
   forms.forEach((f) => {
     new Form(f);
   });
-}
-
-initForms();
+})();

@@ -47,11 +47,9 @@ class Carousel {
   }
 }
 
-function initCarousels() {
+(function initCarousels() {
   const carousels = document.querySelectorAll(".carousel");
   carousels.forEach((c) => {
     new Carousel(c);
   });
-}
-
-initCarousels();
+})();
